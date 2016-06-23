@@ -1,6 +1,7 @@
 <html lang="en" ng-app="app">
+
 <head>
-    <title>Yourapp</title>
+    <title>translator</title>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
     <link href='app/dependency/bootstrap/dist/css/bootstrap.min.css' rel='stylesheet'>
     <script src="app/dependency/angular/angular.js"></script>
@@ -16,13 +17,53 @@
 
     <script type="text/javascript"
             src="app/dependency/angular-cookies/angular-cookies.js"></script>
-</head>
-<body ng-controller="HomeController">
-<h1> HELLO WORLD </h1>
 
-<div class="container-fluid">
+    <link rel="stylesheet" type="text/css" href="app/css/home.css">
+</head>
+
+<body>
+
+<nav class="navbar navbar-default">
+    <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+                    data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#">Translator</a>
+        </div>
+    </div><!-- /.container-fluid -->
+</nav>
+
+<div class="container" ng-controller="HomeController">
+
     <div class="row">
-        <button type="submit" class="btn btn-warning decline-button" ng-click="get()"></button>
+        <h1> Translate please </h1>
+    </div>
+
+
+    <div class="row">
+        <div class="col-md-6">
+            <button type="button" class="btn btn-default">English</button>
+            <button type="button" class="btn btn-default">Ukrainian</button>
+            <textarea rows="4" cols="75" class="firstTextArea">
+            </textarea>
+        </div>
+        <div class="col-md-6">
+            <button type="button" class="btn btn-default">English</button>
+            <button type="button" class="btn btn-default">Ukrainian</button>
+            <textarea rows="4" cols="75" class="secondTextArea">
+            </textarea>
+        </div>
+    </div>
+    <div class="row">
+        <div class="center-div">
+            <button type="button" class="btn btn-primary">Translate</button>
+        </div>
     </div>
 </div>
 </body>

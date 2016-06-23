@@ -7,14 +7,31 @@ import javax.persistence.Id;
 public class Word {
     @Id
     private int id;
-    private String name;
+    private String englishRepresentation;
+    private String ukrainianRepresentation;
 
-    public String getName() {
-        return name;
+    public int getId() {
+        return id;
     }
 
-    public void setName(String name) {
-        this.name = name;
+    public void setId(int id) {
+        this.id = id;
+    }
+
+    public String getEnglishRepresentation() {
+        return englishRepresentation;
+    }
+
+    public void setEnglishRepresentation(String englishRepresentation) {
+        this.englishRepresentation = englishRepresentation;
+    }
+
+    public String getUkrainianRepresentation() {
+        return ukrainianRepresentation;
+    }
+
+    public void setUkrainianRepresentation(String ukrainianRepresentation) {
+        this.ukrainianRepresentation = ukrainianRepresentation;
     }
 
     public Word() {
