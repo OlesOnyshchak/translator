@@ -1,0 +1,29 @@
+<html lang="en" ng-app="app">
+<head>
+    <title>Yourapp</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <link href='app/dependency/bootstrap/dist/css/bootstrap.min.css' rel='stylesheet'>
+    <script src="app/dependency/angular/angular.js"></script>
+    <script src="app/dependency/angular-bootstrap/ui-bootstrap.min.js"></script>
+    <script src="app/dependency/angular-bootstrap/ui-bootstrap-tpls.js"></script>
+
+    <script type="text/javascript" src="app/app.js"></script>
+    <script src="app/controller/home-controller.js"></script>
+    <script type="text/javascript" src="app/dependency/angular-ui-router/release/angular-ui-router.min.js"></script>
+    <script src="app/service/home-service.js"></script>
+    <script type="text/javascript"
+            src="app/dependency/spring-security-csrf-token-interceptor/dist/spring-security-csrf-token-interceptor.min.js"></script>
+
+    <script type="text/javascript"
+            src="app/dependency/angular-cookies/angular-cookies.js"></script>
+</head>
+<body ng-controller="HomeController">
+<h1> HELLO WORLD </h1>
+
+<div class="container-fluid">
+    <div class="row">
+        <button type="submit" class="btn btn-warning decline-button" ng-click="get()"></button>
+    </div>
+</div>
+</body>
+</html>
